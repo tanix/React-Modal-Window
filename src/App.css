@@ -1,38 +1,135 @@
-.App {
-  text-align: center;
+body {
+  color: #5e5e5e;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  font-weight: 500;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.modalWnd {
+  box-shadow: 1px 1px 10px 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
+  min-width: 700px;
+}
+
+.closeModal {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  background: transparent;
+  border: none;
+}
+
+input[type="text"], select, input[type="date"], button  {
+  border: 1px solid #d3d3d3;
+  padding: 10px;
+  color: #5e5e5e;;
+}
+
+.colorOfTheGroupe {
+  position: absolute;
+  right: 20px;
+}
+
+.colorOfTheGroupe select {
+  background: #e3e3e3;
+}
+
+.row {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.timeClass span {
+  height: 37px;
+  display: inline-block;
+  background: #e3e3e3;
+  text-align: center;
+  width: 50px;
+  line-height: 33px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.timeClass input {
+  max-width: 100px;
+}
+
+.commonHours input {
+  max-width: 60px;
+}
+
+.commonHours button {
+  width: 44px;
+  height: 37px;
+  color: #fff;
+  background: #5b92e5;
+  border: none;
+}
+
+.commonHours span {
+  height: 37px;
+  display: inline-block;
+  text-align: center;
+  width: 50px;
+  line-height: 13px;
+  font-size: 10px;
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  background: #f1fbfe;
+}
+
+.dateClass input {
+  max-width: 100px;
+}
+
+.choiceDay button {
+  min-width: 88px;
+}
+
+.selected {
+  background: #5b92e5;
+  color: #fff;
+}
+
+select {
+  width: 200px;
+}
+
+.colorOfTheGroupe select {
+  width: 50px;
+}
+
+.choiceTeacher {
+  width: 462px;
+}
+
+.choiceClassRoom {
+  width: 294px;
+}
+
+.infoBox {
+  width: 100%;
+  padding: 10px;
+  background: pink;
+}
+
+.actionBtn {
+  display: flex;
+  justify-content: end;
+}
+
+.actionBtn button {
+  background: none;
+}
+
+.addSchedule {
+  border: 1px solid black;
+  padding: 0 30px;
+  margin-left: 45px;
+}
+
+.cancellation {
+  border: none;
 }
